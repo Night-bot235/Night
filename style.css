@@ -1,0 +1,111 @@
+body {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px; 
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+}
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    padding: 4px; 
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgb(121, 9, 9) 35%, rgb(255, 0, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.username {
+    font-size: 2em;
+    margin: 0;
+}
+
+.bio {
+    font-size: 1.1em;
+    color: #aaaaaa;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    margin-bottom: 15px;
+}
+
+.links a {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px); 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+}
+
+.links a .hover-text {
+    display: none; 
+}
+
+.links a:hover .original-text {
+    display: none; 
+}
+.links a:hover .hover-text {
+    display: inline;
+}
+
+.links a i {
+    margin-right: 10px;
+    width: 20px;
+} 
